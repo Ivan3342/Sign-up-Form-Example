@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*::selection {
+    background-color: rgb(97, 38, 11);
+    color: white;
+}
+
+#website-wrapper {
+    display: flex;
+}
+
+#logo-side {
+    width: 40%;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1529798856831-427dfd0a1ab1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 70%;
+    margin: 10%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.credits {
+    margin: 20px;
+    color: white;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#sign-up-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 70px;
+}
+
+#sign-up-title {
+    font-size: 42pt;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+#sign-up-description {
+    font-size: 13pt;
+    font-weight: 100;
+    text-align: justify;
+    padding: 20px;
+}
+
+#signup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.input-field {
+    transition: 250ms ease-out;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    margin: 5px 0;
+    & label {
+        text-transform: capitalize;
+        font-size: 11pt;
+    }
+    & input {
+        font-family: inherit;
+        font-size: 13pt;
+        padding: 3px;
+        border-radius: 4px;
+        border: 1.5px solid rgba(0, 0, 0, 0.342);
+    }
+    & input:focus {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.314);
+        border: 1.5px solid rgb(167, 128, 99);
+        outline: none;
+    }
+    & input:invalid {
+        border: 2px solid maroon;
+    }
+}
+
+#create-account {
+    width: calc(1.5rem + 8vw);
+    padding: 10px;
+    border:none;
+    border-radius: 6px;
+    background-color: rgb(167, 128, 99);
+    font-size: calc(1pt + 1vw);
+    font-family: inherit;
+    color: black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    margin: 20px 0 10px 0;
+    transition: 250ms ease-out;
+
+}
+
+#create-account:hover {
+    background-color: rgb(99, 81, 68);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px inset rgba(255, 255, 255, 0.185);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.185);
+}
+
+.link {
+    color: rgb(167, 128, 99);
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+}

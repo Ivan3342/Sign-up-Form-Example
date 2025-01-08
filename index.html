@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="website-wrapper">
+        <div id="logo-side">
+            <img src="assets/foto.png" alt="Foto Vani Logo" id="logo">
+            <p class="credits">Photo by <a class="link" href="https://unsplash.com/@johnmoeses?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">John Moeses Bauan</a> on <a class="link" href="https://unsplash.com/photos/film-tape-on-floor-WG1HNF8PGHo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div id="sign-up-side">
+            <h1 id="sign-up-title">Sign Up</h1>
+            <p id="sign-up-description">Join our community of photography enthusiasts and unlock a world of creativity! Whether you're a seasoned professional or just starting your journey behind the lens, signing up gives you access to exclusive tutorials, stunning photo galleries, and a platform to showcase your work. Capture, share, and inspire—start your photography adventure with us today!</p>
+            <form action="#" name="signup" id="signup">
+                <div class="input-field">
+                    <label for="first-name">First Name</label>
+                    <input minlength="3" maxlength="20"  type="text" name="firstname" id="first-name">
+                </div>
+                <div class="input-field">
+                    <label for="last-name">Last Name</label>
+                    <input minlength="3" maxlength="20"  type="text" name="lastname" id="last-name">
+                </div>
+                <div class="input-field">
+                    <label for="email">E-mail</label>
+                    <input minlength="3" maxlength="20" required placeholder="* required" type="text" name="email" id="email">
+                </div>
+                <div class="input-field">
+                    <label for="phone">Phone number</label>
+                    <input minlength="3" maxlength="20" type="number" name="phone" id="phone">
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input minlength="8" maxlength="20" required placeholder="* required" type="password" name="password" id="password">
+                </div>
+                <div class="input-field">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input minlength="8" maxlength="20" required placeholder="* required"  type="text" name="confirmation" id="confirm-password">
+                </div>
+            </form>
+            <input type="submit" value="Create Account" id="create-account">
+            <p>Already have an account? <a href="#" class="link">Log In</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
